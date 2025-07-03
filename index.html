@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logo-arvore.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <title>Prantei - Blog de Viagens</title>
+</head>
+<body>
+
+    <nav id="navbar">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        
+        <a href="index.html"><img src="imagens/logo-arvore.png" alt="Início"></a>
+        <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="quem-somos.html">Quem Somos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li>
+                <form action="blog.html" method="GET" style="display: flex; align-items: center;">
+                    <input type="text" name="q" placeholder="Pesquisar...">
+                    <button type="submit">Buscar</button>
+                </form>
+            </li>
+        </ul>
+        <a href="registro.html" id="registro">Login / Registro</a>
+    </nav>
+
+    <header id="banner">
+        <img src="imagens/logo-arvore.png" alt="Prantei logo">
+        <h1>Blog de Viagens</h1>
+    </header>
+    <main>
+        <section id="destaque">
+            <div class="container">
+                <h2>Destaques</h2>
+                <p>Páginas mais visitadas</p>
+                <article class="box">
+                    <h3>Capadócia, Turquia</h3>
+                    <div class="display-flex">
+                        <img src="imagens/destaque1.jpg" alt="Capadócia, Turquia">
+                        <div>
+                            <p>
+                                A Capadócia, uma região semiárida na área central da Turquia, é conhecida pelas inconfundíveis
+                                "chaminés de fada", altas formações rochosas em formato de cone agrupadas no Vale dos Monges,
+                                em Göreme e em outros lugares. Outros locais importantes são as casas da Idade do Bronze esculpidas
+                                nas paredes do vale por trogloditas (habitantes das cavernas) e usadas posteriormente como refúgio
+                                pelos primeiros cristãos.
+                            </p>
+                            <a href="blog/capadocia.html" class="botao">Ver mais</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="box">
+                    <h3>Lago de Bled, Eslovênia</h3>
+                    <div class="display-flex">
+                        <img src="imagens/destaque2.jpg" alt="Lago de Bled, Eslovênia">
+                        <div>
+                            <p>
+                                O Lago de Bled, é um lago nos Alpes Julianos da região da Alta Carniola, noroeste da Eslovénia,
+                                onde confina a cidade de Bled. A área é um dos principais destinos turísticos da Eslovénia.
+                                O lago fica a de 35km do Aeroporto Internacional de Liubliana e 55km da capital, Liubliana.
+                            </p>
+                            <a href="blog/lago-de-bled.html" class="botao">Ver mais</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="box">
+                    <h3>Vaadhoo, Ilha Maldivas</h3>
+                    <div class="display-flex">
+                        <img src="imagens/destaque3.jpg" alt="Vaadhoo, Ilha Maldivas">
+                        <div>
+                            <p>
+                                Vaadhoo é uma das ilhas habitadas do Atol Raa, nas Maldivas. Famosa pelo plâncton bioluminescente,
+                                um fenômeno bioluminescente anual conhecido como “O Mar das Estrelas” é visível desta ilha.
+                            </p>
+                            <a href="blog/vaadhoo.html" class="botao">Ver mais</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="mid-banner1">
+            <p>
+                Explorando o mundo, um destino de cada vez.
+            </p>
+        </section>
+
+        <section id="blog">
+            <div class="container">
+                <h2>Blog</h2>
+                <p>Postagens mais recentes</p>
+                <article class="box">
+                    <h3>Machu Picchu, Peru</h3>
+                    <div class="display-flex">
+                        <img src="imagens/machu-picchu.jpg" alt="Machu Picchu, Peru">
+                        <div>
+                            <p>
+                                Machu Picchu é uma antiga cidade inca localizada no Peru, situada a cerca de 2.430 metros acima do nível do mar, na Cordilheira dos Andes.
+                                É um dos destinos turísticos mais famosos do mundo e foi declarada Patrimônio Mundial da UNESCO em 1983.
+                            </p>
+                            <a href="blog/machu-picchu.html" class="botao">Ver mais</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="box">
+                    <h3>Delta do Okavango, Botsuana</h3>
+                    <div class="display-flex">
+                        <img src="imagens/okavango.jpg" alt="Delta do Okavango, Botsuana">
+                        <div>
+                            <p>
+                                O Delta do Okavango é um dos maiores deltas interiores do mundo, localizado no norte de Botsuana.
+                                É uma região única e rica em biodiversidade, formada pelo rio Okavango que deságua no deserto de Kalahari.
+                            </p>
+                            <a href="blog/delta-okavango.html" class="botao">Ver mais</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="box">
+                    <h3>Petra, Jordânia</h3>
+                    <div class="display-flex">
+                        <img src="imagens/petra.jpg" alt="Petra, Jordânia">
+                        <div>
+                            <p>
+                                Petra, originalmente conhecida pelos nabateus como Raqmu, é uma cidade histórica e arqueológica localizada no sul da Jordânia.
+                                A cidade é famosa por sua arquitetura esculpida em rocha e por seu sistema de canalização de água.
+                                Outro nome para Petra é Cidade Rosa, devido à cor das pedras do local.
+                            </p>
+                            <a href="blog/petra.html" class="botao">Ver mais</a>
+                        </div>
+                    </div>
+                </article>
+                    
+                    <p>Veja todas as postagens do nosso site!</p>
+                    <a href="blog.html" class="botao">Conferir Blog</a>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="galeria">
+            <div class="container">
+                <h2>Galeria</h2>
+                <p>Explore nossa galeria de fotos</p>
+                <div class="galeria-grid">
+                    <figure>
+                        <img src="imagens/destaque2.jpg" alt="Lago de Bled, Eslovênia">
+                        <figcaption>Lago de Bled, Eslovênia</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="imagens/blog1.jpg" alt="Monte Fuji, Japão">
+                        <figcaption>Monte Fuji, Japão</figcaption>
+                    </figure>
+                </div>
+                <p>Conheça todas as imagens!</p>
+                <a href="galeria.html" class="botao">Galeria Completa</a>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="redes-sociais">
+            <div class="container">
+                <h2>Redes Sociais</h2>
+                <p>Siga-nos nas redes sociais e fique por dentro de todas as novidades</p>
+                <div class="display-flex">
+                    <a href="#"><img src="imagens/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="imagens/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="imagens/tiktok.png" alt="TikTok"></a>
+                    <a href=""><img src="imagens/youtube.png" alt="youtube"></a>
+                    <a href="#"><img src="imagens/x.png" alt="X"></a>
+                    <a href="#"><img src="imagens/linkedin.png" alt="Linkedin"></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="mid-banner2">
+            <p>
+                Viajando, descobrindo, compartilhando.
+            </p>
+        </section>
+
+        <section id="quem-somos">
+            <div class="container">
+                <h2>Quem Somos</h2>
+                <p>O PRANTEI nasceu da paixão por explorar o mundo e compartilhar experiências autênticas de viagem.
+                    Aqui, acreditamos que cada destino tem uma história para contar e que viajar é muito mais do que
+                    apenas visitar lugares – é vivenciar culturas, criar memórias e se aventurar no desconhecido.
+                </p>
+                <p>
+                    Seja você um mochileiro de primeira viagem ou um explorador experiente, o PRANTEI está aqui para
+                    inspirar e ajudar na sua próxima jornada. Embarque com a gente nessa viagem sem fronteiras!
+                </p>
+
+                <a href="quem-somos.html" class="botao">Conhecer Equipe</a>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="contato">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>
+                    Quer falar com a gente? Seja para compartilhar uma experiência de viagem, tirar dúvidas ou propor parcerias,
+                    estamos à disposição!
+                </p>
+                <a href="contato.html" class="botao">Entrar em Contato</a>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="voltar">
+            <div class="container">
+                <a href="#" class="botao"> Voltar ao Início</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container display-flex">
+            <section class="logo">
+                <img src="imagens/logo-arvore.png" alt="Prantei logo">
+                <p>&copy; PRANTEI - Blog de Viagens.</p>
+                <p>Todos os direitos reservados.</p>
+            </section>
+                
+            <section>
+                <h3>Endereço</h3>
+                <p>Rua das Flores, 123</p>
+                <p>Centro</p>
+                <p>Rio de Janeiro - RJ</p>
+                <p>CEP: 20000-000</p>
+            </section>
+
+            <section>
+                <h3>Sumário</h3>
+                <ul class="lista-footer">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Links Úteis</h3>
+                <ul class="lista-footer">
+                    <li><a href="termos-de-servico.html">Termos de Serviço</a></li>
+                    <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+                    <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Redes Sociais</h3>
+                <ul class="redes-sociais display-flex">
+                    <li><a href="#"><img src="imagens/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="imagens/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="imagens/tiktok.png" alt="TikTok"></a></li>
+                    <li><a href="#"><img src="imagens/x-white.png" alt="X"></a></li>
+                    <li><a href=""><img src="imagens/youtube.png" alt="youtube"></a></li>
+                    <li><a href="#"><img src="imagens/linkedin.png" alt="Linkedin"></a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

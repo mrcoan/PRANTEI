@@ -1,0 +1,503 @@
+*{
+    font-family: "Jura", sans-serif;  
+    transition: all 0.1s linear;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+p{
+    text-align: justify;
+    margin: 10px 0;
+}
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    margin: 0;
+    padding: 0;}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+legend{
+    font-weight: bold;
+    margin: 0 0 0 5px;
+}
+button{
+    cursor: pointer;
+    background: #fff;
+    font-size: inherit;
+}
+hr{
+    border: 1px solid lightgray;
+    width: 65%;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.botao{
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #000;
+    color: #000;
+    background: #fff;
+}
+.botao:hover{
+    background: #000;
+    color: #fff;
+}
+.botao-disabled{
+    background-color: #ccc;
+    pointer-events: none;
+    cursor: default;
+}
+.box, .box-autor,  .box-avaliacao, .box-equipe, .box-contato, .box-termos, .box-politicas{
+    border: 1px solid lightgray;
+    background: #fff;
+}
+.box p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.box mark {
+    background-color: #0085fe;
+    color: #fff;
+    font-weight: bold;
+}
+.box img{
+    filter: brightness(80%);
+    border: 1px solid lightgray;
+}
+.box:hover{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px;
+}
+.box:hover img{
+    filter: brightness(100%);
+}
+.box-equipe img{
+    border-radius: 100%;
+}
+
+#banner{
+    color: #fff;
+    background: url(../imagens/background3.jpg) no-repeat center / cover fixed;
+    text-align: center;
+}
+#menu-toggle {
+    display: none;
+}
+
+#navbar img:hover{
+    filter: grayscale(100%);
+}
+#navbar ul li a:hover{
+    filter: brightness(50%);
+}
+#navbar form button:hover{
+    background: #0085fe;
+    color: #fff;
+}
+#navbar #registro{
+    background: #fff;
+    color: #000;
+}
+#navbar #registro:hover{
+    background: #0085fe;
+    color: #fff;
+}
+#registro, #login, #trabalhe-conosco, #recuperar-senha{
+    background: url(../imagens/registro-background.jpg) no-repeat center / cover fixed;
+    color: #fff;
+}
+#destaque, #blog, #avaliacao, #galeria, #redes-sociais, #quem-somos, #contato, #mapa, #feito-com, #equipe,
+#compartilhe, #termos-de-servico, #politica-de-privacidade, #trabalhar-conosco, #paginacao, #voltar{
+    background: #fff;
+}
+#mid-banner1{
+    background: url(../imagens/banner1.jpg) no-repeat center / cover fixed;
+}
+#mid-banner2{
+    background: url(../imagens/banner2.jpg) no-repeat center / cover fixed;
+}
+#mid-banner1, #mid-banner2{
+    color: #fff;
+}
+#mid-banner1 p, #mid-banner2 p{
+    text-align: center;
+}
+
+#compartilhe img:hover{
+    filter: brightness(50%);
+}
+#redes-sociais img:hover{
+    filter: brightness(50%);
+}
+#voltar{
+    text-align: center;
+}
+footer{
+    background: #000;
+    color: #fff;
+}
+footer .lista-footer a:hover{
+    filter: brightness(50%);
+}
+footer .redes-sociais img:hover{
+    filter: brightness(50%);
+}
+
+
+@media (max-width: 600px) { /* Estilos para telas menores que 600px */ 
+}
+@media (min-width: 601px) and (max-width: 1024px) { /* Entre 601px e 1024px */ 
+
+    .container {
+        width: 580px;
+        margin: 0 auto;
+    }
+    .display-flex{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .box, .box-autor,  .box-avaliacao, .box-equipe, .box-contato, .box-termos, .box-politicas{
+        margin: 10px 0;
+        padding: 10px;
+    }
+    .box img{
+        width: 100%;
+        margin-right: 10px;
+        object-fit: cover;
+    }
+    .box-equipe{
+        width: 250px;
+    }
+    .box-avaliacao{
+        width: 180px;
+    }
+    #banner{
+        padding: 50px 0;
+    }
+    #banner img{
+        height: 200px;
+    }
+    #navbar{
+        background: #000;
+        color: #fff;
+        position: sticky;
+        top: 0;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #navbar img{
+        height: 60px;
+    }
+    #navbar #registro{
+        padding: 22px 10px;
+    }
+    #navbar ul{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #000;
+        padding: 10px 0;
+    }
+    #navbar ul li a{
+        display: block;
+        padding: 15px;
+        font-size: 20px;
+    }
+    #navbar ul li a:hover{
+        opacity: 50%; 
+    }
+    #navbar form input{
+        padding: 18px 5px;
+        width: 100%;
+    }
+    #navbar form button{
+        background: #fff;
+        color: #000;
+        padding: 18px;
+        border: 1px solid #000;
+    }
+    #navbar .menu-icon{
+        display: inline-block;
+        cursor: pointer;
+        padding: 14px 20px;
+        font-size: 28px;
+    }
+    #menu-toggle:checked ~ ul{
+        display: flex;
+        position: absolute;
+        top: 65px;
+        left: 0;
+    }
+
+    #registro, #login, #trabalhe-conosco, #recuperar-senha{
+        padding: 50px 0 300px 0;
+    }
+    #formulario-registro, #formulario-contato, #form-trabalhe-conosco, #formulario-login, #formulario-recuperacao{
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+        padding: 20px 0;
+        background: #fff;
+        border: 1px solid lightgray;
+    }
+    #formulario-registro label, #formulario-contato label, #form-trabalhe-conosco label, #formulario-login label, #formulario-recuperacao label{
+        font-weight: bold;
+    }
+    #formulario-registro input, #formulario-contato input, #formulario-contato textarea, #form-trabalhe-conosco input, #formulario-login input, #formulario-recuperacao input{
+        width: 300px;
+        padding: 10px;
+        margin: 0 0 20px 0;
+        border: 1px solid lightgray;
+    }
+    #destaque, #blog, #avaliacao, #galeria, #redes-sociais, #quem-somos, #contato, #mapa, #feito-com, #equipe,
+    #compartilhe, #termos-de-servico, #politica-de-privacidade, #trabalhar-conosco, #paginacao, #voltar{
+        padding: 30px 0;
+    }
+    #mid-banner1, #mid-banner2{
+        padding: 200px 0;
+    }
+    #compartilhe img{
+        height: 50px;
+        margin: 0 10px;
+    }
+    #galeria figure{
+        filter: brightness(100%);
+        object-fit: cover;
+    }
+    #galeria figcaption{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        text-align: center;
+        color: #fff;
+        display: none;
+    }
+    #galeria figure:hover img{
+        filter: brightness(40%);
+    }
+    #galeria figure:hover figcaption{
+        display: block;
+    }
+    .galeria-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    #redes-sociais img{
+        height: 50px;
+    }
+    #feito-com img{
+        height: 100px;
+        margin: 10px 0;
+    }
+    footer{
+        padding: 50px 0;
+    }
+    footer section{
+        margin-bottom: 20px;
+    }
+    footer section:not(:last-child){
+        margin-right: 20px;
+    }
+    footer .logo img{
+        height: 50px;
+    }
+    footer .lista-footer li{
+        margin-bottom: 5px;
+    }
+    footer .redes-sociais{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    footer .redes-sociais img{
+        height: 25px;
+        margin-right: 10px;
+    }
+}
+@media (min-width: 1025px) { /* Estilos para telas maiores que 1025px */ 
+    .container {
+        width: 1000px;
+        margin: auto;
+    }
+    .display-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .box, .box-autor,  .box-avaliacao, .box-equipe, .box-contato, .box-termos, .box-politicas{
+        margin: 10px 0;
+        padding: 10px;
+    }
+    .box img{
+        height: 200px;
+        margin-right: 10px;
+    }
+    .box-equipe{
+        width: 180px;
+    }
+    .box-avaliacao{
+        width: 300px;
+    }
+    #banner{
+        padding: 50px 0;
+    }
+    #banner img{
+        height: 300px;
+    }
+    .menu-icon{
+        display: none;
+    }
+    #navbar{
+        background: #000;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        z-index: 2;
+    }
+    #navbar img{
+        height: 50px;
+    }
+    #navbar ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+    }
+    #navbar ul li a{
+        padding: 20px;
+    }
+    #navbar form input{
+        padding: 18px 5px;
+        width: 250px;
+    }
+    #navbar form button{
+        background: #fff;
+        color: #000;
+        padding: 18px;
+        border: 1px solid #000;
+    }
+    #navbar #registro{
+        padding: 18px;
+    }
+    #registro, #login, #trabalhe-conosco, #recuperar-senha{
+        padding: 100px 0 300px 0;
+    }
+    #formulario-registro, #formulario-contato, #form-trabalhe-conosco, #formulario-login, #formulario-recuperacao{
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+        padding: 20px 0;
+        background: #fff;
+        border: 1px solid lightgray;
+    }
+    #formulario-registro label, #formulario-contato label, #form-trabalhe-conosco label, #formulario-login label, #formulario-recuperacao label{
+        font-weight: bold;
+    }
+    #formulario-registro input, #formulario-contato input, #formulario-contato textarea, #form-trabalhe-conosco input, #formulario-login input, #formulario-recuperacao input{
+        width: 300px;
+        padding: 10px;
+        margin: 0 0 20px 0;
+        border: 1px solid lightgray;
+    }
+    #destaque, #blog, #avaliacao, #galeria, #redes-sociais, #quem-somos, #contato, #mapa, #feito-com, #equipe,
+    #compartilhe, #termos-de-servico, #politica-de-privacidade, #trabalhar-conosco, #paginacao, #voltar{
+        padding: 30px 0;
+    }
+    #mid-banner1, #mid-banner2{
+        padding: 200px 0;
+    }
+    #compartilhe img{
+        height: 50px;
+        margin: 0 10px;
+    }
+    #galeria figure{
+        filter: brightness(100%);
+        height: 280px;
+        object-fit: cover;
+    }
+    #galeria figcaption{
+        position: absolute;
+        width: 100%;
+        top: 48%;
+        text-align: center;
+        color: #fff;
+        display: none;
+    }
+    #galeria figure:hover img{
+        filter: brightness(40%);
+    }
+    #galeria figure:hover figcaption{
+        display: block;
+    }
+    .galeria-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        margin: auto;
+    }
+    #redes-sociais img{
+        height: 80px;
+    }
+    #feito-com img{
+        height: 150px;
+        margin: 10px 0;
+    }
+    footer{
+        padding: 50px 0 100px 0;
+    }
+    footer section:not(:last-child){
+        margin-right: 20px;
+    }
+    footer .logo img{
+        height: 80px;
+    }
+    footer .lista-footer li{
+        margin-bottom: 5px;
+    }
+    footer .redes-sociais img{
+        height: 20px;
+        margin-right: 10px;
+    }
+}
+
+
+@keyframes animacao-intro{
+    from{
+        filter: blur(5px) opacity(0);
+    }
+    to{
+        filter: blur(0px) opacity(1);
+    }
+}
+main, aside{
+    animation: animacao-intro 1s backwards;
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logo-arvore.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <title>Blog de Viagens - Prantei</title>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        
+        <a href="index.html"><img src="imagens/logo-arvore.png" alt="Início"></a>
+        <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="quem-somos.html">Quem Somos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li>
+                <form action="blog.html" method="GET" style="display: flex; align-items: center;">
+                    <input type="text" name="q" placeholder="Pesquisar...">
+                    <button type="submit">Buscar</button>
+                </form>
+            </li>
+        </ul>
+        <a href="registro.html" id="registro">Login / Registro</a>
+    </nav>
+
+    <header id="banner">
+        <img src="imagens/logo-arvore.png" alt="Prantei logo">
+        <h1>Blog de Viagens</h1>
+    </header>
+    <main>
+
+        <section id="blog">
+            <div class="container">
+                <h2>Blog</h2>
+                <p>Postagens mais recentes</p>
+                <div id="mensagem-busca"></div>
+                <article class="box">
+                    <h3>Machu Picchu, Peru</h3>
+                    <div class="display-flex">
+                        <img src="imagens/machu-picchu.jpg" alt="Machu Picchu, Peru">
+                        <div>
+                            <p>
+                                Machu Picchu é uma antiga cidade inca localizada no Peru, situada a cerca de 2.430 metros acima do nível do mar, na Cordilheira dos Andes.
+                                É um dos destinos turísticos mais famosos do mundo e foi declarada Patrimônio Mundial da UNESCO em 1983.
+                            </p>
+                            <a href="blog/machu-picchu.html" class="botao">Ver mais</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="box">
+                    <h3>Delta do Okavango, Botsuana</h3>
+                    <div class="display-flex">
+                        <img src="imagens/okavango.jpg" alt="Delta do Okavango, Botsuana">
+                        <div>
+                            <p>
+                                O Delta do Okavango é um dos maiores deltas interiores do mundo, localizado no norte de Botsuana.
+                                É uma região única e rica em biodiversidade, formada pelo rio Okavango que deságua no deserto de Kalahari.
+                            </p>
+                            <a href="blog/delta-okavango.html" class="botao">Ver mais</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="box">
+                    <h3>Petra, Jordânia</h3>
+                    <div class="display-flex">
+                        <img src="imagens/petra.jpg" alt="Petra, Jordânia">
+                        <div>
+                            <p>
+                                Petra, originalmente conhecida pelos nabateus como Raqmu, é uma cidade histórica e arqueológica localizada no sul da Jordânia.
+                                A cidade é famosa por sua arquitetura esculpida em rocha e por seu sistema de canalização de água.
+                                Outro nome para Petra é Cidade Rosa, devido à cor das pedras do local.
+                            </p>
+                            <a href="blog/petra.html" class="botao">Ver mais</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="box">
+                    <h3>Tromsø, Noruega</h3>
+                    <div class="display-flex">
+                        <img src="imagens/tromso.jpg" alt="Tromsø, Noruega">
+                        <div>
+                            <p>
+                                Tromso está localizada na Noruega, mais precisamente no norte do país, a leste da ilha Tromsoya em uma região chamada de Troms og Finnmark (condado norueguês).
+                                É a maior cidade do ártico, situada a 350 km ao norte do Circulo Polar. Apesar de parecer distante e remota, Tromso é uma cidade absolutamente deslumbrante com paisagens naturais que são realmente de tirar o fôlego.
+                                Famosa por ser um dos melhores lugares do mundo para ver aurora boreal, está bem distante da capital norueguesa, Oslo, aproximadamente 1740 km.
+                            </p>
+                            <a href="blog/tromso.html" class="botao">Ver mais</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="box">
+                    <h3>Monte Fuji, Japão</h3>
+                    <div class="display-flex">
+                        <img src="imagens/blog1.jpg" alt="Monte Fuji, Japão">
+                        <div>
+                            <p>
+                                O monte Fuji é a mais alta montanha da ilha de Honshu e de todo o arquipélago japonês.
+                                É um vulcão ativo, porém de baixo risco de erupção. O monte Fuji localiza-se a oeste de
+                                Tóquio próximo da costa do oceano Pacífico da ilha de Honshu, na fronteira entre as
+                                províncias de Shizuoka e de Yamanashi.
+                            </p>
+                            <a href="blog/monte-fuji.html" class="botao">Ver mais</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="paginacao">
+            <div class="container">
+                <p>Exibindo 1 a 5 de 10 postagens</p>
+                <a href="#" class="botao botao-disabled">Anterior</a>
+                <a href="blog2.html" class="botao">Próximo</a>
+            </div>
+        </section>
+
+
+        <section id="voltar">
+            <div class="container">
+                <a href="#" class="botao"> Voltar ao Início</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container display-flex">
+            <section class="logo">
+                <img src="imagens/logo-arvore.png" alt="Prantei logo">
+                <p>&copy; PRANTEI - Blog de Viagens.</p>
+                <p>Todos os direitos reservados.</p>
+            </section>
+
+            <section>
+                <h3>Endereço</h3>
+                <p>Rua das Flores, 123</p>
+                <p>Centro</p>
+                <p>Rio de Janeiro - RJ</p>
+                <p>CEP: 20000-000</p>
+            </section>
+
+            <section>
+                <h3>Sumário</h3>
+                <ul class="lista-footer">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Links Úteis</h3>
+                <ul class="lista-footer">
+                    <li><a href="termos-de-servico.html">Termos de Serviço</a></li>
+                    <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+                    <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Redes Sociais</h3>
+                <ul class="redes-sociais display-flex">
+                    <li><a href="#"><img src="imagens/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="imagens/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="imagens/tiktok.png" alt="TikTok"></a></li>
+                    <li><a href="#"><img src="imagens/x-white.png" alt="X"></a></li>
+                    <li><a href=""><img src="imagens/youtube.png" alt="youtube"></a></li>
+                    <li><a href="#"><img src="imagens/linkedin.png" alt="Linkedin"></a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+    
+        // Função para normalizar texto (remover acentos e colocar tudo em minúsculas)
+        function normalizarTexto(texto) {
+            return texto
+                .normalize("NFD") // separa letras de acentos
+                .replace(/[\u0300-\u036f]/g, "") // remove os acentos
+                .toLowerCase(); // converte para minúsculas
+        }
+    
+        const termoBusca = getQueryParam("q");
+        const artigos = document.querySelectorAll(".box");
+        const termoNormalizado = termoBusca ? normalizarTexto(termoBusca) : "";
+    
+        let encontrouAlgo = false;
+    
+        if (termoBusca) {
+            artigos.forEach(artigo => {
+                const textoNormalizado = normalizarTexto(artigo.innerText);
+    
+                if (textoNormalizado.includes(termoNormalizado)) {
+                    artigo.style.display = "block";
+                    encontrouAlgo = true;
+    
+                    // Destaque do termo buscado (sem normalizar, para manter os acentos)
+                    const regex = new RegExp(`(${termoBusca})`, 'gi');
+                    artigo.innerHTML = artigo.innerHTML.replace(regex, `<mark>$1</mark>`);
+                } else {
+                    artigo.style.display = "none";
+                }
+            });
+    
+            if (!encontrouAlgo) {
+                const aviso = document.createElement("p");
+                aviso.textContent = `Nenhuma notícia encontrada para "${termoBusca}".`;
+                aviso.style.fontWeight = "bold";
+                aviso.style.color = "crimson";
+                aviso.style.marginTop = "20px";
+    
+                const containerMensagem = document.getElementById("mensagem-busca");
+                if (containerMensagem) {
+                    containerMensagem.appendChild(aviso);
+                } else {
+                    document.body.appendChild(aviso); // fallback
+                }
+            }
+        }
+    </script>
+    
+
+
+</body>
+
+</html>

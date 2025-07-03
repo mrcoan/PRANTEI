@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logo-arvore.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <title>Redefinição de Senha - Prantei</title>
+</head>
+<body>
+
+    <nav id="navbar">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        
+        <a href="index.html"><img src="imagens/logo-arvore.png" alt="Início"></a>
+        <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="quem-somos.html">Quem Somos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li>
+                <form action="blog.html" method="GET" style="display: flex; align-items: center;">
+                    <input type="text" name="q" placeholder="Pesquisar...">
+                    <button type="submit">Buscar</button>
+                </form>
+            </li>
+        </ul>
+        <a href="registro.html" id="registro">Login / Registro</a>
+    </nav>
+    
+    <main>
+        <section id="recuperar-senha">
+            <div class="container">
+                <h2>Redefinição de Senha</h2>
+                <p>Digite seu e-mail para receber instruções de redefinição de senha</p>
+                <form action="" method="post" id="formulario-recuperacao">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+
+                    <button type="submit" class="botao">Enviar</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container display-flex">
+            <section class="logo">
+                <img src="imagens/logo-arvore.png" alt="Prantei logo">
+                <p>&copy; PRANTEI - Blog de Viagens.</p>
+                <p>Todos os direitos reservados.</p>
+            </section>
+                
+            <section>
+                <h3>Endereço</h3>
+                <p>Rua das Flores, 123</p>
+                <p>Centro</p>
+                <p>Rio de Janeiro - RJ</p>
+                <p>CEP: 20000-000</p>
+            </section>
+
+            <section>
+                <h3>Sumário</h3>
+                <ul class="lista-footer">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Links Úteis</h3>
+                <ul class="lista-footer">
+                    <li><a href="termos-de-servico.html">Termos de Serviço</a></li>
+                    <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+                    <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Redes Sociais</h3>
+                <ul class="redes-sociais display-flex">
+                    <li><a href="#"><img src="imagens/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="imagens/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="imagens/tiktok.png" alt="TikTok"></a></li>
+                    <li><a href="#"><img src="imagens/x-white.png" alt="X"></a></li>
+                    <li><a href=""><img src="imagens/youtube.png" alt="youtube"></a></li>
+                    <li><a href="#"><img src="imagens/linkedin.png" alt="Linkedin"></a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("formulario-login").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            let email = document.getElementById("email").value;
+            let senha = document.getElementById("senha").value;
+    
+            if (email && senha) {
+                let nomeUsuario = email.split("@")[0]; // Simplesmente pega o nome antes do @ como nome do usuário
+                localStorage.setItem("usuario", nomeUsuario); // Armazena o nome no localStorage
+                alert("Login bem-sucedido!");
+                window.location.href = "index.html"; // Redireciona para a página inicial
+            } else {
+                alert("Preencha os campos corretamente.");
+            }
+        });
+    </script>    
+
+</body>
+</html>
