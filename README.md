@@ -31,7 +31,6 @@ Foi criado usando apenas tecnologias front-end (HTML, CSS e JavaScript).
 - `/registro.html` – Tela de registro  
 - `/style/` – Folhas de estilo (CSS)  
 - `/script/` – Arquivos de JavaScript  
-- `/img/` – Imagens utilizadas no site
 
 ---
 
@@ -49,5 +48,4 @@ Foi criado usando apenas tecnologias front-end (HTML, CSS e JavaScript).
 
 O projeto é estático, então não precisa de servidor local ou banco de dados para funcionar.
 O sistema de login/registro é simulado (não conectado a um banco de dados).
-Algumas páginas ainda podem ser expandidas futuramente (ex: sistema de comentários).
-Responsividade ainda está incompleta.
+A responsividade ainda está incompleta.
